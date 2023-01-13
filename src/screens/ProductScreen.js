@@ -11,7 +11,7 @@ import Loader from '../components/Loader'
 
 
 const ProductScreen = ({ history, match }) => {
-  const [qty, setQty] = useState(0)
+  const [qty, setQty] = useState(1)
   const { id } = useParams();
   const navigate = useNavigate();
   // const product = products.find((p) => p._id === (id))
