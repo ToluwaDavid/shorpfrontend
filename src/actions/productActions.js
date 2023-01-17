@@ -19,6 +19,7 @@ export const listProducts = () => async (dispatch) => {
         })
     }
 }
+
 // List a product
 export const listProductDetails = (id) => async (dispatch) => {
     try {
