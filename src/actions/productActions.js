@@ -5,11 +5,7 @@ import { PRODUCT_LIST_REQUEST, PRODUCT_LIST_SUCCESS, PRODUCT_LIST_FAIL, PRODUCT_
 // List Products
 export const listProducts = () => async (dispatch) => {
     try {
-        dispatch({ type: PRODUCT_LIST_REQUEST })
-        const { data } = await axios.get('https://shorp-app-api.onrender.com/api/products')
-
         dispatch({
-            type: PRODUCT_LIST_SUCCESS,
             payload: data
         })
     } catch (error) {
@@ -19,6 +15,7 @@ export const listProducts = () => async (dispatch) => {
         })
     }
 }
+
 // List a product
 export const listProductDetails = (id) => async (dispatch) => {
     try {
